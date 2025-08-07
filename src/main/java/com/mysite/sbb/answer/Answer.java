@@ -18,11 +18,8 @@ public class Answer {
     @Column(columnDefinition = "TEXT")
     private String content;
 
-    private LocalDateTime createTime;
+    private LocalDateTime createDate;
 
     @ManyToOne
     private Question question;
-
-    public void setCreateDate(LocalDateTime now) {
-    }
 }
